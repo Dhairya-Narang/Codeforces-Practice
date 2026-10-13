@@ -1,5 +1,4 @@
 # Codeforces-Practice
-# Codeforces Solutions
 
 A structured collection of my C / C++ solutions for Codeforces problem sets, covering rating-based practice (800+) and Div. 3 / Div. 4 contest problems.
 
