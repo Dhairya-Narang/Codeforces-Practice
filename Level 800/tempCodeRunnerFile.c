@@ -1,30 +1,16 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int main(){
-    int n,m;
-    scanf("%d %d",&n,&m);
-    int array[n][m];
-    bool f=false;
-    for(int i=0;i<n;i++){
-        for(int z=0;z<m;z++){
-            scanf("%1d",&array[i][z]);
-            if(array[i][0]!=array[i][z]){
-                f=true;
-                break;
-            }
+        int n;
+        scanf("%d",&n);
+        int arr[n];
+        for(int i=0;i>n;i++){
+            scanf("%d",&arr[i]);
         }
-        if(i>0 && i<n-1){
-            if(array[i][0]!=array[i+1][0] || f==true){
-                f=true;
-                break;
-            }
+        if(arr[n-1]==0){
+            printf("EASY");
+        }else{
+            printf("HARD");
         }
-    }
-    if(f==true){
-        printf("NO");
-    }else{
-        printf("YES");
-    }
-    return 0;
+        return 0;
 }
